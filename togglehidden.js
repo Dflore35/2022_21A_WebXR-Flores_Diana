@@ -59,7 +59,7 @@ AFRAME.registerComponent("togglehidden", {
           img.setAttribute("animation", params);
         
         //change the image back to psyche
-        //img.setAttribute("src", "https://cdn.glitch.global/5abe6510-0954-4132-8e0c-d35824eaf575/thumbnails%2Fhit.PNG?1641630335058");
+        //img.setAttribute("src", "");
         
         page = 1;
         tb.setAttribute("value", "Next: Asteriod Collison");
@@ -99,7 +99,7 @@ AFRAME.registerComponent("togglehidden", {
 
                
         //change the image back to earth
-        img.setAttribute("src","https://cdn.glitch.global/5abe6510-0954-4132-8e0c-d35824eaf575/thumbnails%2FScreen%20Shot%202022-02-15%20at%203.35.47%20AM.png?1644921546417");
+        //img.setAttribute("src","Earth.png");
 
         page = 2;
         tb.setAttribute("value", "Back: Why Psyche is important");
@@ -148,7 +148,7 @@ AFRAME.registerComponent("togglehidden", {
         
         
         //change the image back to earth
-          //img.setAttribute("src", "https://cdn.glitch.global/5abe6510-0954-4132-8e0c-d35824eaf575/thumbnails%2FScreen%20Shot%202022-02-15%20at%203.35.47%20AM.png?1644921546417");
+          //img.setAttribute("src", "Earth.png");
         
         page = 0;
         tb.setAttribute("value", "Next: How might have Pysche formed?");
