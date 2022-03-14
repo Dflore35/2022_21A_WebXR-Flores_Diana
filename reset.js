@@ -1,13 +1,14 @@
-var reset =0;
 
-
-AFRAME.registerComponent('reset-button', {
+    AFRAME.registerComponent('reset-button', {
   init: function () {
     let sceneEl = document.querySelector('a-scene');
     let el = this.el;
 
     el.addEventListener('click', function () {
-     
+      if(resets==1)
+        {
+          resets=0;
+          
           var move = sceneEl.querySelector("#rouge1");
        let objPosition = move.getAttribute("position");
           let params = 
@@ -98,11 +99,9 @@ AFRAME.registerComponent('reset-button', {
       
 
       console.log("restart button was clicked!");
-          
-          reset=1;
-        
-      
-      
+        }
+     
+               
     });
   }
 });
