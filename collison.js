@@ -1,15 +1,19 @@
-AFRAME.registerComponent('start-button', {
+var resets=0;
+const ranNum = (min, max) => {
+  return Math.random() * (max - min + 1) + min;
+};
+    AFRAME.registerComponent('start-button', {
   init: function () {
     let sceneEl = document.querySelector('a-scene');
     let el = this.el;
 
     el.addEventListener('click', function () {
-   
- 
-      var move = sceneEl.querySelector("#rouge1");
+      if(resets==0)
+      {
+        resets=1;
+          var move = sceneEl.querySelector("#rouge1");
       move.setAttribute("color","red");
        let objPosition = move.getAttribute("position");
-
           let params = 
             {
             property: "position",
@@ -35,6 +39,8 @@ AFRAME.registerComponent('start-button', {
       //move first broken part
       var part1 = sceneEl.querySelector("#part1");
 
+        var y1=(Math.random() * 4)+5.5;
+        var x1=ranNum(-3,3);
 
           let params1 = 
             {
@@ -48,8 +54,8 @@ AFRAME.registerComponent('start-button', {
             },
               
             to: {
-					x: -.7,
-					y: 8,
+					x: x1,
+					y: y1,
 					z: -8
 				   },
             dur: 400,
@@ -58,9 +64,10 @@ AFRAME.registerComponent('start-button', {
           };
        
           part1.setAttribute("animation", params1);
-       //move second broken part
+       //move second broken part -4.9
       var part2 = sceneEl.querySelector("#part2");
-
+        var z2=(Math.random() * -10)+3;
+        var x2 =ranNum(-2,2);
 
           let params2 = 
             {
@@ -74,9 +81,9 @@ AFRAME.registerComponent('start-button', {
             },
               
             to: {
-					x: .6,
+					x: x2,
 					y: -.1,
-					z: -4.9
+					z: z2
 				   },
             dur: 400,
           delay:150,
@@ -87,7 +94,8 @@ AFRAME.registerComponent('start-button', {
        //move third broken part
       var part3 = sceneEl.querySelector("#part3");
 
-
+        var y3=ranNum(-.2,5);
+        var x3 =ranNum(-2,-6);
           let params3 = 
             {
             property: "position",
@@ -100,8 +108,8 @@ AFRAME.registerComponent('start-button', {
             },
               
             to: {
-					x: -4,
-					y: 1.3,
+					x: x3,
+					y: y3,
 					z: -6
 				   },
             dur: 400,
@@ -112,7 +120,8 @@ AFRAME.registerComponent('start-button', {
           part3.setAttribute("animation", params3);
        //move fourth broken part
       var part4 = sceneEl.querySelector("#part4");
-
+        var y4=ranNum(-.2,2);
+        var x4 =ranNum(2,5.5);
 
           let params4 = 
             {
@@ -126,8 +135,8 @@ AFRAME.registerComponent('start-button', {
             },
               
             to: {
-					x: 5,
-					y: 1,
+					x: x4,
+					y: y4,
 					z: -6
 				   },
             dur: 400,
@@ -139,7 +148,12 @@ AFRAME.registerComponent('start-button', {
       
 
       console.log("restart button was clicked!");
+        
+        
+      }
+  
       
     });
   }
 });
+    
