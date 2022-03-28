@@ -7,7 +7,34 @@ const ranNum = (min, max) => {
     let sceneEl = document.querySelector('a-scene');
     let el = this.el;
 
+    //get next/finish button
+    var toggleButton = sceneEl.querySelector("#toggleButton");
+    var toggleButton2 = sceneEl.querySelector("#toggleButton2");
+    
+    
+    
+		//function calling
+		var resetComponent = document.querySelector('[reset]').components.reset;
+    //console.log(resetComponent);
+    
+    
     el.addEventListener('click', function () {
+      
+      
+      
+      //console.log(resetComponent);
+      
+      
+       //resetComponent.resetFunction(sceneEl, el);
+      
+      
+        toggleButton.setAttribute("opacity", "1.0");
+        toggleButton2.setAttribute("opacity", "1.0");
+      toggleButton2.setAttribute("link", "href: https://psyche.asu.edu/; title: PsychePage; on: click");
+      
+      
+      
+      
       if(resets==0)
       {
         resets=1;
@@ -147,7 +174,7 @@ const ranNum = (min, max) => {
           part4.setAttribute("animation", params4);
       
 
-      console.log("restart button was clicked!");
+      console.log("click here button was clicked!");
         
         
       }
@@ -156,4 +183,3 @@ const ranNum = (min, max) => {
     });
   }
 });
-    
