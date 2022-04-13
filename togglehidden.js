@@ -54,7 +54,7 @@ AFRAME.registerComponent("togglehidden", {
             y: 0.54,
             z: -7,
           },
-           dur: 1,
+           dur: 1
         };
         claimLabel.setAttribute("animation", params);
         let objPosition2 = claim.getAttribute("position");
@@ -65,7 +65,7 @@ AFRAME.registerComponent("togglehidden", {
             y: 1.4,
             z: -7,
           },
-           dur: 1,
+           dur: 1
         };
         claim.setAttribute("animation", params2);
         //show the back button
@@ -73,7 +73,7 @@ AFRAME.registerComponent("togglehidden", {
         back2.setAttribute("opacity", "1.0");
 
         page = 0;
-        // console.log("page=" + page);
+         console.log("page=" + page);
       } else if (
         (this.id == "toggleButton2" && page == 0) ||
         (this.id == "finsih" && page == 2)
@@ -124,7 +124,7 @@ AFRAME.registerComponent("togglehidden", {
         back.setAttribute("opacity", "1.0");
         back2.setAttribute("opacity", "1.0");
 
-        // console.log("page=" + page);
+        console.log("page=" + page);
       } else if (
         (this.id == "toggleButton2" && page == 1) ||
         (this.id == "finsih" && page == -1)
@@ -164,7 +164,7 @@ AFRAME.registerComponent("togglehidden", {
         back.setAttribute("opacity", "1.0");
         back2.setAttribute("opacity", "1.0");
 
-        // console.log("page=" + page);
+        console.log("page=" + page);
       } else if (
         (this.id == "toggleButton2" && page == 2) ||
         (this.id == "finsih" && page == 1)
@@ -210,7 +210,7 @@ AFRAME.registerComponent("togglehidden", {
 
         back.setAttribute("opacity", "1.0");
         back2.setAttribute("opacity", "1.0");
-        // console.log("page=" + page);
+         console.log("page=" + page);
       } else if (
         (this.id == "toggleButton2" && page == -1) ||
         (this.id == "finsih" && page == 0)
@@ -244,7 +244,7 @@ AFRAME.registerComponent("togglehidden", {
         back.setAttribute("opacity", "0.0");
         back2.setAttribute("opacity", "0.0");
         page = 5;
-        //console.log("page test =" + page);
+        console.log("page test =" + page);
       }
 
       // console.log("pagehello=" + page);
