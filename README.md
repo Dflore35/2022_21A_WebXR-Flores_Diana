@@ -1,4 +1,4 @@
-# WebXRNASACapstone
+# 2022_21A_WebXR-Flores_Diana
 This project is an informative experience that lets the user understand why the Psyche mission is important and what we are hoping to discover by visiting Psyche.
 
 I learned how to program in A-Frame using glitch.com. I also received help from my team members. This experience uses html and javascrpit programming languages. This project was made by Diana Flores and Co-Author Micah Schmidt. I pushed the finished prototype here on GitHub pages.
